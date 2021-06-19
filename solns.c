@@ -82,11 +82,11 @@ int factors(int num,int ret[])
     } 
 for(int m=3;m<=num;m+=2)
     {
-        while(num % j == 0)
+        while(num % m == 0)
         {
-            ret[k] = j;
+            ret[k] = m;
             k++;
-            num = num/j;
+            num = num/m;
         }
     }
  return k;
